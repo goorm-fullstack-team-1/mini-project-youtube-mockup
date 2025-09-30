@@ -7,8 +7,14 @@ body {
     font-family: Roboto, Arial;
     margin: 0;
     padding-top: 80px;
-    padding-left: 96px;
+    padding-left: 266px;
     padding-right: 24px;
     background-color: #151515;
     color: #fff;
+}
+
+@media (max-width: 1309px) {
+    body {
+    padding-left: 96px;
+    }
 }

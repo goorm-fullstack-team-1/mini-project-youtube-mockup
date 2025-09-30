@@ -4,29 +4,91 @@
     bottom: 0;
     top: 55px;
     background-color: #121212FF;
-    width: 72px;
+    width: 240px;
     z-index: 200;
-    padding-top: 5px;
+    padding: 0 12px;
+    box-sizing: border-box;
 }
 
 .sidebar-link {
-    height: 74px;
+    height: 45px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
     cursor: pointer;
+    text-align: center;
+    justify-content: space-between;
 }
 
 .sidebar-link:hover {
     background-color: #4D4D4D;
+    border-radius: 10px;
 }
 
-.sidebar-link img {
-    height: 24px;
-    margin-bottom: 4px;
+.sidebar-link svg {
+    padding: 15px;
+    width: 24px;
 }
 
 .sidebar-link div {
-    font-size: 10px;
+    width: 75%;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.sidebar-link-mypage {
+    margin-top: 5px;
+    border-top: 1px solid #535353;
+}
+
+.sidebar-mypage {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+@media (max-width: 1309px) {
+    .mini-sidebar {
+        display: none;
+    }
+
+    .sidebar {
+        width: 72px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar-link {
+        width: 64px;
+        padding: 16px 0 14px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .sidebar-link svg {
+        padding: 0;
+    }
+
+    .sidebar-link div {
+        width: 100%;
+        text-align: center;
+        margin-left: 0px;
+        font-size: 10px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .sidebar-link-mypage {
+        border-top: none;
+    }
+
+    .sidebar-mypage {
+        text-align: center;
+    }
+
+    .sidebar-mypage svg {
+        display: none;
+    }
 }
