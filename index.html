@@ -1,12 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
+    <title>Youtube</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/video.css">
 </head>
+
 <body>
-  
+    <header class="header">
+        <div class="left-section">
+            <img class="hamburger-menu" src="assets/icons/hamburger-menu.svg" alt="hamburger-menu">
+            <img class="youtube-logo" src="assets/icons/youtube-logo.svg" alt="youtube-logo">
+        </div>
+        <div class="middle-section">
+            <input class="search-bar" type="text" placeholder="검색">
+            <button class="search-button">
+                <img class="search-icon" src="assets/icons/search.svg" alt="search-icon">
+                <div class="tooltip">검색</div>
+            </button>
+            <button class="voice-search-button">
+                <!-- <img class="voice-search-icon" src="assets/icons/voice-search-icon.svg" alt="voice-search-icon"> -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="24" viewBox="0 0 24 24" width="24" focusable="false"
+                    aria-hidden="true" style="pointer-events: none; display: inherit;">
+                    <path
+                        d="M12 3c-1.66 0-3 1.37-3 3.07v5.86c0 1.7 1.34 3.07 3 3.07s3-1.37 3-3.07V6.07C15 4.37 13.66 3 12 3zm6.5 9h-1c0 3.03-2.47 5.5-5.5 5.5S6.5 15.03 6.5 12h-1c0 3.24 2.39 5.93 5.5 6.41V21h2v-2.59c3.11-.48 5.5-3.17 5.5-6.41z">
+                    </path>
+                </svg>
+                <div class="tooltip">Search with your voice</div>
+            </button>
+        </div>
+        <div class="right-section">
+            <div class="upload-icon-container">
+                <img class="upload-icon" src="assets/icons/upload.svg" alt="upload-icon">
+                <div class="tooltip">Create</div>
+            </div>
+            <img class="youtube-apps-icon" src="assets/icons/youtube-apps.svg" alt="youtube-apps-icon">
+            <div class="notifications-icon-contatiner">
+                <img class="notifications-icon" src="assets/icons/notifications.svg" alt="notifications-icon">
+                <div class="notifications-count">1</div>
+            </div>
+            <img class="current-user-picture" src="assets/images/avatars/avatar-1.png" alt="current-user-picture">
+        </div>
+    </header>
+    <nav class="sidebar">
+        <div class="sidebar-link">
+            <!-- <img src="assets/icons/home.svg" alt="home"> -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
+                focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit;">
+                <path clip-rule="evenodd"
+                    d="M22.146 11.146a.5.5 0 01-.353.854H20v7.5a1.5 1.5 0 01-1.5 1.5H14v-8h-4v8H5.5A1.5 1.5 0 014 19.5V12H2.207a.5.5 0 01-.353-.854L12 1l10.146 10.146Z"
+                    fill-rule="evenodd"></path>
+            </svg>
+            <div>홈</div>
+        </div>
+        <div class="sidebar-link">
+            <!-- <img src="assets/icons/explore.svg" alt="explore"> -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
+                focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit;">
+                <path clip-rule="evenodd"
+                    d="m7.61 15.719.392-.22v-2.24l-.534-.228-.942-.404c-.869-.372-1.4-1.15-1.446-1.974-.047-.823.39-1.642 1.203-2.097h.001L15.13 3.59c1.231-.689 2.785-.27 3.466.833.652 1.058.313 2.452-.879 3.118l-1.327.743-.388.217v2.243l.53.227.942.404c.869.372 1.4 1.15 1.446 1.974.047.823-.39 1.642-1.203 2.097l-.002.001-8.845 4.964-.001.001c-1.231.688-2.784.269-3.465-.834-.652-1.058-.313-2.451.879-3.118l1.327-.742Zm1.993 6.002c-1.905 1.066-4.356.46-5.475-1.355-1.057-1.713-.548-3.89 1.117-5.025a4.14 4.14 0 01.305-.189l1.327-.742-.942-.404a4.055 4.055 0 01-.709-.391c-.963-.666-1.578-1.718-1.644-2.877-.08-1.422.679-2.77 1.968-3.49l8.847-4.966c1.905-1.066 4.356-.46 5.475 1.355 1.057 1.713.548 3.89-1.117 5.025a4.074 4.074 0 01-.305.19l-1.327.742.942.403c.253.109.49.24.709.392.963.666 1.578 1.717 1.644 2.876.08 1.423-.679 2.77-1.968 3.491l-8.847 4.965ZM10 14.567a.25.25 0 00.374.217l4.45-2.567a.25.25 0 000-.433l-4.45-2.567a.25.25 0 00-.374.216v5.134Z"
+                    fill-rule="evenodd"></path>
+            </svg>
+            <div>Shorts</div>
+        </div>
+        <div class="sidebar-link">
+            <!-- <img src="assets/icons/subscriptions.svg" alt="subscriptions"> -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
+                focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit;">
+                <path clip-rule="evenodd"
+                    d="M4 4.5A1.5 1.5 0 015.5 3h13A1.5 1.5 0 0120 4.5H4Zm16.5 3h-17v11h17v-11ZM3.5 6A1.5 1.5 0 002 7.5v11A1.5 1.5 0 003.5 20h17a1.5 1.5 0 001.5-1.5v-11A1.5 1.5 0 0020.5 6h-17Zm7.257 4.454a.5.5 0 00-.757.43v4.233a.5.5 0 00.757.429L15 13l-4.243-2.546Z"
+                    fill-rule="evenodd"></path>
+            </svg>
+            <div>구독</div>
+        </div>
+        <div class="sidebar-link-mypage">
+            <div class="sidebar-link">
+                <!-- <img src="assets/icons/originals.svg" alt="originals"> -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
+                    focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit;">
+                    <path clip-rule="evenodd"
+                        d="M12 20.5c1.894 0 3.643-.62 5.055-1.666a5.5 5.5 0 00-10.064-.105.755.755 0 01-.054.099A8.462 8.462 0 0012 20.5Zm4.079-5.189a7 7 0 012.142 2.48 8.5 8.5 0 10-12.443 0 7 7 0 0110.3-2.48ZM12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm2-12.5a2 2 0 11-4 0 2 2 0 014 0Zm1.5 0a3.5 3.5 0 11-7 0 3.5 3.5 0 017 0Z"
+                        fill-rule="evenodd"></path>
+                </svg>
+                <div class="sidebar-mypage">내 페이지
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="16" viewBox="0 0 16 16"
+                        width="16" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit;">
+                        <path clip-rule="evenodd" d="M4.97 12.65 9.62 8 4.97 3.35l.71-.71L11.03 8l-5.35 5.35-.71-.7z"
+                            fill-rule="evenodd">
+                        </path>
+                    </svg> -->
+                </div>
+            </div>
+            <div class="sidebar-link">
+                <!-- <img src="assets/icons/youtube-music.svg" alt="youtube-music"> -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
+                    focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit;">
+                    <path clip-rule="evenodd"
+                        d="M17.53 11.53c.293-.293.293-.767 0-1.06-.293-.293-.767-.293-1.06 0l-3.72 3.72V3c0-.414-.336-.75-.75-.75s-.75.336-.75.75v11.19l-3.72-3.72c-.293-.293-.767-.293-1.06 0-.293.293-.293.767 0 1.06l5 5 .53.53.53-.53 5-5Zm1.72 8.97c.414 0 .75-.336.75-.75s-.336-.75-.75-.75H4.75c-.414 0-.75.336-.75.75s.336.75.75.75h14.5Z"
+                        fill-rule="evenodd"></path>
+                </svg>
+                <div>오프라인 저장 동영상</div>
+            </div>
+            <div class="sidebar-link mini-sidebar">
+                <!-- <img src="assets/icons/library.svg" alt="library"> -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
+                    focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit;">
+                    <path clip-rule="evenodd"
+                        d="m8.042 9.456-.716.08c-.732.08-1.486-.16-2.043-.718-.977-.976-.977-2.559 0-3.535.976-.977 2.559-.977 3.535 0 .558.557.798 1.312.717 2.044l-.079.715.51.51 10.13 10.13c-.97.643-2.291.537-3.146-.318l-4.951-4.951-1.061 1.06 4.951 4.952c1.442 1.442 3.712 1.553 5.282.331.13-.1.255-.212.375-.331l.707-.707-1.06-1.061L15.534 12l5.657-5.657 1.06-1.06-.706-.708c-.12-.12-.245-.23-.376-.331-1.569-1.222-3.839-1.111-5.281.331L13.06 7.404l1.061 1.06 2.829-2.828c.855-.855 2.175-.961 3.146-.318l-4.56 4.56 1.06 1.061L15.536 12l-4.51-4.51c.128-1.164-.254-2.375-1.147-3.268-1.562-1.562-4.095-1.562-5.657 0-1.562 1.562-1.562 4.095 0 5.657.893.893 2.104 1.276 3.269 1.147l2.033 2.033 1.06-1.06-2.033-2.033-.509-.51Zm-.285-3.113c-.39-.39-1.023-.39-1.414 0-.39.39-.39 1.024 0 1.415.39.39 1.024.39 1.414 0 .39-.391.39-1.024 0-1.415Zm-.43 8.122.715.079.51-.51.973-.973L8.465 12l-.975.974c-1.165-.128-2.375.254-3.268 1.147-1.562 1.562-1.562 4.095 0 5.657 1.562 1.562 4.094 1.562 5.657 0 .893-.893 1.275-2.104 1.147-3.269l.974-.973-1.06-1.061-.975.974-.509.509.079.716c.08.732-.16 1.486-.717 2.044-.976.976-2.56.976-3.536 0-.976-.977-.976-2.56 0-3.536.558-.558 1.312-.798 2.044-.717Zm-.984 3.192c.39.39 1.024.39 1.414 0 .39-.39.39-1.024 0-1.414-.39-.39-1.023-.39-1.414 0-.39.39-.39 1.023 0 1.414Z"
+                        fill-rule="evenodd"></path>
+                </svg>
+                <div>내 클립</div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="video-grid">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="assets/images/thumbnails/thumbnail-1.jpeg" alt="thumbnail">
+                    <div class="video-time">8:20</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="assets/images/avatars/avatar-1.png" alt="profile-picture">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            아름다운 풍경(1)
+                        </p>
+                        <p class="video-author">
+                            아이디(1)
+                        </p>
+                        <p class="video-stats">
+                            3 views &#183; 6 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="assets/images/thumbnails/thumbnail-1.jpeg" alt="thumbnail">
+                    <div class="video-time">8:20</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="assets/images/avatars/avatar-1.png" alt="profile-picture">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            아름다운 풍경(1)
+                        </p>
+                        <p class="video-author">
+                            아이디(1)
+                        </p>
+                        <p class="video-stats">
+                            3 views &#183; 6 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="assets/images/thumbnails/thumbnail-1.jpeg" alt="thumbnail">
+                    <div class="video-time">8:20</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="assets/images/avatars/avatar-1.png" alt="profile-picture">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            아름다운 풍경(1)
+                        </p>
+                        <p class="video-author">
+                            아이디(1)
+                        </p>
+                        <p class="video-stats">
+                            3 views &#183; 6 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="assets/images/thumbnails/thumbnail-1.jpeg" alt="thumbnail">
+                    <div class="video-time">8:20</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="assets/images/avatars/avatar-1.png" alt="profile-picture">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            아름다운 풍경(1)
+                        </p>
+                        <p class="video-author">
+                            아이디(1)
+                        </p>
+                        <p class="video-stats">
+                            3 views &#183; 6 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="assets/images/thumbnails/thumbnail-1.jpeg" alt="thumbnail">
+                    <div class="video-time">8:20</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="assets/images/avatars/avatar-1.png" alt="profile-picture">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            아름다운 풍경(1)
+                        </p>
+                        <p class="video-author">
+                            아이디(1)
+                        </p>
+                        <p class="video-stats">
+                            3 views &#183; 6 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="assets/images/thumbnails/thumbnail-1.jpeg" alt="thumbnail">
+                    <div class="video-time">8:20</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="assets/images/avatars/avatar-1.png" alt="profile-picture">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            아름다운 풍경(1)
+                        </p>
+                        <p class="video-author">
+                            아이디(1)
+                        </p>
+                        <p class="video-stats">
+                            3 views &#183; 6 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="assets/images/thumbnails/thumbnail-1.jpeg" alt="thumbnail">
+                    <div class="video-time">8:20</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="assets/images/avatars/avatar-1.png" alt="profile-picture">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            아름다운 풍경(1)
+                        </p>
+                        <p class="video-author">
+                            아이디(1)
+                        </p>
+                        <p class="video-stats">
+                            3 views &#183; 6 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="assets/images/thumbnails/thumbnail-1.jpeg" alt="thumbnail">
+                    <div class="video-time">8:20</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="assets/images/avatars/avatar-1.png" alt="profile-picture">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            아름다운 풍경(1)
+                        </p>
+                        <p class="video-author">
+                            아이디(1)
+                        </p>
+                        <p class="video-stats">
+                            3 views &#183; 6 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="assets/images/thumbnails/thumbnail-1.jpeg" alt="thumbnail">
+                    <div class="video-time">8:20</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="assets/images/avatars/avatar-1.png" alt="profile-picture">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            아름다운 풍경(1)
+                        </p>
+                        <p class="video-author">
+                            아이디(1)
+                        </p>
+                        <p class="video-stats">
+                            3 views &#183; 6 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="assets/images/thumbnails/thumbnail-1.jpeg" alt="thumbnail">
+                    <div class="video-time">8:20</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="assets/images/avatars/avatar-1.png" alt="profile-picture">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            아름다운 풍경(1)
+                        </p>
+                        <p class="video-author">
+                            아이디(1)
+                        </p>
+                        <p class="video-stats">
+                            3 views &#183; 6 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
