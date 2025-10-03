@@ -12,7 +12,8 @@
 <body>
   <header class="header">
     <div class="left-section">
-      <img class="hamburger-menu" src="assets/icons/hamburger-menu.svg" alt="hamburger-menu">
+      <input type="checkbox" id="menu-toggle" hidden>
+      <label for="menu-toggle"><img class="hamburger-menu" src="assets/icons/hamburger-menu.svg" alt="hamburger-menu"></label>
       <img class="youtube-logo" src="assets/icons/youtube-logo.svg" alt="youtube-logo">
     </div>
     <div class="middle-section">
@@ -289,5 +290,11 @@
         </div>
     </section>
   </main>
+  <script>
+    const button = document.getElementById('menu-toggle');
+    button.addEventListener('click', (element)=> {
+      element.target.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
