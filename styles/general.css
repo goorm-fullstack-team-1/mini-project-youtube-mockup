@@ -12,3 +12,7 @@ body {
   background-color: #181818;
   color: #fff;
 }
+
+body.sidebar-active {
+  padding-left: 264px;
+}
